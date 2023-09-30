@@ -18,4 +18,13 @@
 
 ## Project-Planning:
 #### The Project of Automating MongoDB Backups on EC2 involves using multiple applications and integration methods.
-#### Here this project is divided into "6 STEPS" or Parts.
+### This project is devided into Multiple PARTS in order to make it easy to understand.
+###    PART-1 - Creating an AWS Account
+###    PART-2 - Creating IAM Account with Access Credentials.
+###    PART-3 - Launching an EC2-Ubuntu-Instance:
+###    PART-4 - Installing Flask Application & it's dependencies on EC2.
+###    PART-5 - Installing MongoDB & it's Dependencies on EC2.
+###    PART-6 - Integrating Flask-App with MongoDB.
+###    PART-7 - Connecting to MongoDB using Mongo Compass.
+###    PART-8 - Enabling MongoDB backup from EC2 to S3.
+###    PART-9 - Automating the Backup using Cronjob
