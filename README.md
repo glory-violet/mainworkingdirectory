@@ -19,7 +19,8 @@
 ## Project-Planning:
 #### The Project of Automating MongoDB Backups on EC2 involves using multiple applications and integration methods.
 ### This project is devided into multiple PARTS in order to make it easy to understand.
-###    PART-1 - Creating an AWS Account _Tutorial
+###    PART-1 - [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)
+### -- To access the [AWS signup page](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)           
 ###    PART-2 - Creating IAM Account with Access Credentials _Tutorial
 ###    PART-3 - Launching an EC2-Ubuntu-Instance _Tutorial
 ###    PART-4 - Installing Flask Application & it's dependencies on EC2 _Tutorial
