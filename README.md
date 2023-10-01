@@ -86,7 +86,8 @@
 
 
 ## PART-2 - Setting up AWS IAM Crdentials _Tutorial:
-#### AWS IAM (Identity and Access Management) Credentials are authentication and authorization settings that define who can access AWS resources and what actions they can perform, ensuring secure and controlled access to AWS services and data.
+### About AWS IAM: 
+> AWS IAM (Identity and Access Management) Credentials are authentication and authorization settings that define who can access AWS resources and what actions they can perform, ensuring secure and controlled access to AWS services and data.
 
 ### Use Cases:
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
