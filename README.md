@@ -93,7 +93,7 @@
 #### Use Cases:
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
 
-### - 2.1 - Creating an AWS IAM User Credentials:
+### 2.1 - Creating an AWS IAM User Credentials:
 - Create an IAM User
 - Create an IAM Group
 2.3 - Creating an Assigning Permisions. e.g. EC2 Full Access, and S3 Full Access.
@@ -120,7 +120,7 @@
 - Create the Security Group.
 - Click on "Launch Instance"
 
-### - 3.2 - SSH onto the EC2 Instance using Git-BASH:
+### 3.2 - SSH onto the EC2 Instance using Git-BASH:
 - Download Git-BASH
 - Navigate to the location of you Key-Pair.pem file.
 - Change the Key-pair.pem file permissions.
