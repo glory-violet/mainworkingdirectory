@@ -103,7 +103,7 @@
 
 
 
-## PART-3 Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:
+## PART-3 [Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:]
 #### About Amazon Elastic Compute Cloud:
 > An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment.
 
@@ -111,13 +111,13 @@
 > Launching an EC2 instance is necessary because it provides the virtual computing environment where MongoDB will run.
 
 ### - 3.1 - Navigate to EC2 section in the AWS Management Console.
-###    - 3.2 - Click on "Launch Instances" 
-###    - 3.3 - Define the EC2 Instance Name.
-###    - 3.4 - Select the AMI as Ubuntu and the Version is 20.04 LTS.
-###    - 3.5 - Select the Instance type as Free-Tier.
-###    - 3.6 - Create the Key-pair.
-###    - 3.7 - Create the Security Group.
-###    - 3.8 - Click on "Launch Instance"
+###       - Click on "Launch Instances" 
+###       - Define the EC2 Instance Name.
+###       - Select the AMI as Ubuntu and the Version is 20.04 LTS.
+###       - Select the Instance type as Free-Tier.
+###       - Create the Key-pair.
+###       - Create the Security Group.
+###       - Click on "Launch Instance"
 
 
 
