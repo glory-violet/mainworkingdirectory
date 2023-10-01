@@ -50,7 +50,7 @@
 
 ## Project - "Planning":
 #### The Project of Automating MongoDB Backups on EC2 involves using multiple applications and integration methods.
-### This project is devided into multiple PARTS in order to make it easy to understand.
+### This project is devided into "6 Main PARTS" in order to make it easy to understand.
 ###    PART-1 - Creating an AWS Account.   
 ###    PART-2 - Creating AWS IAM Credentials.
 ###    PART-3 - Launching an EC2-Ubuntu-Instance and Establishing a SSH Connection.
@@ -64,4 +64,11 @@
 ### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
 # Project Execution _Guide:
 ## PART-1 - [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
-### - 1.1 - To access the [AWS signup page](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)
+#### AWS Cloud:
+#### AWS (Amazon Web Services) is a comprehensive and widely used cloud computing platform that offers a wide range of scalable and on-demand computing services, including storage, databases, machine learning, and more.
+
+#### Use Cases:
+#### Creating an AWS account is the initial step because AWS provides the infrastructure and services required for hosting the EC2 instance and S3 bucket, etc.
+
+
+### - 1.1 - To access the [AWS Sign-Up page](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)
