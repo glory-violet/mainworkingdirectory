@@ -69,7 +69,8 @@
 #### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
 
 
-## PART-1 - [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
+## PART-1
+### [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
 ### About Amazon Web Services:
 > AWS (Amazon Web Services) is a comprehensive and widely used cloud computing platform that offers a wide range of scalable and on-demand computing services, including storage, databases, machine learning, and more.
 
@@ -86,7 +87,8 @@
 
 
 
-## PART-2 - Setting up AWS IAM Crdentials _Tutorial:
+## PART-2
+### Setting up AWS IAM Crdentials _Tutorial:
 ### About AWS IAM:
 > AWS IAM (Identity and Access Management) Credentials are authentication and authorization settings that define who can access AWS resources and what actions they can perform, ensuring secure and controlled access to AWS services and data.
 
@@ -103,7 +105,8 @@
 
 
 
-## PART-3 - Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:
+## PART-3
+### Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:
 ### About Amazon Elastic Compute Cloud:
 > An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment.
 
@@ -124,7 +127,8 @@
 
 
 
-## PART-4 - Installing MongoDB and its Dependencies on EC2 _Tutorial:
+## PART-4
+### Installing MongoDB and its Dependencies on EC2 _Tutorial:
 ### About MongoDB:
 > MongoDB is a popular NoSQL database management system developed by MongoDB Inc. It stores data in a flexible, JSON-like format and is known for its scalability, performance, and ability to handle unstructured or semi-structured data.
 
@@ -136,7 +140,8 @@
 
 
 
-## PART-5 - Creating an S3 bucket and configuring it as the destination for MongoDB backups from EC2 _Tutorial:
+## PART-5
+### Creating an S3 bucket and configuring it as the destination for MongoDB backups from EC2 _Tutorial:
 ### About Amazon Simple Storage Service:
 > Amazon S3 (Simple Storage Service) is a highly scalable and secure object storage service provided by Amazon Web Services (AWS) for storing and retrieving data, often used for backup, data archiving, and serving static assets for websites and applications.
 
@@ -152,4 +157,5 @@
 
 
 
-## PART-6 - Automating MongoDB Backup _Tutorial:
+## PART-6
+### Automating MongoDB Backup _Tutorial:
