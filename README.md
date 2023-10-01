@@ -44,24 +44,13 @@
 #### Providing an automated and efficient backup solution that runs automatically on a pre-defined, scheduled time reducing human interventions for backup, and to save time & efforts.
 
 
-
-
-
-
-## Project - "Planning":
-#### The Project of Automating MongoDB Backups on EC2 involves using multiple applications and integration methods.
-### This project is devided into "6 Main PARTS" in order to make it easy to understand.
-###    PART-1 - Creating an AWS Account.   
-###    PART-2 - Creating AWS IAM Credentials.
-###    PART-3 - Launching an EC2-Ubuntu-Instance and Establishing a SSH Connection.
-###    PART-4 - Installing MongoDB & it's Dependencies on EC2
-###    PART-5 - Enabling MongoDB backup from EC2 to S3
-###    PART-6 - Automating the Backup using Cronjob
-
-
-
 ............................................................................................................................................................................................................................
+#### The Project of Automating MongoDB Backups on EC2 involves using multiple applications and integration methods.
+
+### This project is devided into "6 Main PARTS" in order to make it easy to understand.
+
 ### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
+
 # Project Execution _Guide:
 
 
