@@ -93,11 +93,12 @@
 #### Use Cases:
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
 
-### - 2.1 - Creating an IAM User
-### - 2.2 - Creating an IAM Group
-### - 2.3 - Creating an Assigning Permisions. e.g. EC2 Full Access, and S3 Full Access.
-### - 2.4 - Creating Access Credentials.
-### - 2.5 - Loggin in with the IAM User Credentials.
+### - 2.1 - Creating an AWS IAM User Credentials:
+- Create an IAM User
+- Create an IAM Group
+2.3 - Creating an Assigning Permisions. e.g. EC2 Full Access, and S3 Full Access.
+- Creating Access Credentials.
+- Loggin in with the IAM User Credentials.
 
 
 
