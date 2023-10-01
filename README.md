@@ -62,14 +62,11 @@
 ............................................................................................................................................................................................................................
 #### The Project of Automating MongoDB Backups on EC2 involves using multiple applications and integration methods.
 
-### This project is devided into "6 Main PARTS" in order to make it easy to understand.
+#### This project is devided into "6 Main PARTS" in order to make it easy to understand.
 
-### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
+#### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
 
 # Project Execution _Guide:
-
-
-
 
 
 ## PART-1 - [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
