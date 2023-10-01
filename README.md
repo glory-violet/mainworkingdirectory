@@ -63,6 +63,11 @@
 ............................................................................................................................................................................................................................
 ### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
 # Project Execution _Guide:
+
+
+
+
+
 ## PART-1 - [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
 #### AWS (Amazon Web Services) is a comprehensive and widely used cloud computing platform that offers a wide range of scalable and on-demand computing services, including storage, databases, machine learning, and more.
 
@@ -71,7 +76,14 @@
 
 ### - 1.1 - To access the [AWS Sign-Up page](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)
 
-## PART-2 - Setting up AWS IAM Crdentials:
+
+
+
+
+
+
+
+## PART-2 - Setting up AWS IAM Crdentials _Tutorial:
 #### AWS IAM (Identity and Access Management) Credentials are authentication and authorization settings that define who can access AWS resources and what actions they can perform, ensuring secure and controlled access to AWS services and data.
 
 #### Use Cases - Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
@@ -86,7 +98,7 @@
 
 
 
-## PART-3 - Launching an EC2-Ubuntu Instance and Establishing SSH Connection:
+## PART-3 - Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:
 #### An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment.
 
 #### Use Cases - Launching an EC2 instance is necessary because it provides the virtual computing environment where MongoDB will run.
@@ -105,7 +117,7 @@
 
 
 
-## PART-4 - Installing MongoDB and its Dependencies on EC2:
+## PART-4 - Installing MongoDB and its Dependencies on EC2 _Tutorial:
 #### MongoDB is a popular NoSQL database management system developed by MongoDB Inc. It stores data in a flexible, JSON-like format and is known for its scalability, performance, and ability to handle unstructured or semi-structured data.
 
 #### Use Cases - Installing MongoDB on the EC2 instance is required to set up the database system that stores the application's data.
@@ -115,7 +127,7 @@
 
 
 
-## PART-5 - Creating an S3 bucket and configuring it as the destination for MongoDB backups from EC2:
+## PART-5 - Creating an S3 bucket and configuring it as the destination for MongoDB backups from EC2 _Tutorial:
 #### Amazon S3 (Simple Storage Service) is a highly scalable and secure object storage service provided by Amazon Web Services (AWS) for storing and retrieving data, often used for backup, data archiving, and serving static assets for websites and applications.
 
 #### Use Case: Creating an S3 bucket serves as the destination for storing MongoDB backups. S3 offers scalable, secure, and durable object storage, making it an ideal choice for backup storage.
@@ -129,4 +141,4 @@
 
 
 
-## PART-6 - Automating MongoDB Backup:
+## PART-6 - Automating MongoDB Backup _Tutorial:
