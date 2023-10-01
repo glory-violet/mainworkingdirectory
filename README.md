@@ -81,3 +81,52 @@
 ### - 2.3 - Creating an Assigning Permisions. e.g. EC2 Full Access, and S3 Full Access.
 ### - 2.4 - Creating Access Credentials.
 ### - 2.5 - Loggin in with the IAM User Credentials.
+
+
+
+
+
+## PART-3 - Launching an EC2-Ubuntu Instance and Establishing SSH Connection:
+#### An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment.
+
+#### Use Cases - Launching an EC2 instance is necessary because it provides the virtual computing environment where MongoDB will run.
+
+### - 3.1 - Navigate to EC2 section in the AWS Management Console.
+###    - 3.2 - Click on "Launch Instances" 
+###    - 3.3 - Define the EC2 Instance Name.
+###    - 3.4 - Select the AMI as Ubuntu and the Version is 20.04 LTS.
+###    - 3.5 - Select the Instance type as Free-Tier.
+###    - 3.6 - Create the Key-pair.
+###    - 3.7 - Create the Security Group.
+###    - 3.8 - Click on "Launch Instance"
+
+
+
+
+
+
+## PART-4 - Installing MongoDB and its Dependencies on EC2:
+#### MongoDB is a popular NoSQL database management system developed by MongoDB Inc. It stores data in a flexible, JSON-like format and is known for its scalability, performance, and ability to handle unstructured or semi-structured data.
+
+#### Use Cases - Installing MongoDB on the EC2 instance is required to set up the database system that stores the application's data.
+
+### - 4.1 - Installing MongoDB
+
+
+
+
+## PART-5 - Creating an S3 bucket and configuring it as the destination for MongoDB backups from EC2:
+#### Amazon S3 (Simple Storage Service) is a highly scalable and secure object storage service provided by Amazon Web Services (AWS) for storing and retrieving data, often used for backup, data archiving, and serving static assets for websites and applications.
+
+#### Use Case: Creating an S3 bucket serves as the destination for storing MongoDB backups. S3 offers scalable, secure, and durable object storage, making it an ideal choice for backup storage.
+
+### - 5.1 - Creating S3 bucket
+### - 5.2 - Creating a "backup" fodler in the S3 bucket.
+### - 5.3 - Enabling MongoDB Backup from the EC2 to S3.
+### - 5.4 - Testing the backup configuration.
+
+
+
+
+
+## PART-6 - Automating MongoDB Backup:
