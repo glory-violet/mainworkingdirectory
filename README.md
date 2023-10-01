@@ -69,8 +69,7 @@
 #### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
 
 
-## PART-1
-## [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
+## PART-1: [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
 #### About Amazon Web Services:
 > AWS (Amazon Web Services) is a comprehensive and widely used cloud computing platform that offers a wide range of scalable and on-demand computing services, including storage, databases, machine learning, and more.
 
