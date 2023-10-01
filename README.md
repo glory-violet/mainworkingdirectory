@@ -100,6 +100,7 @@
 - Creating Access Credentials.
 - Loggin in with the IAM User Credentials.
 
+### 2.2 - Loggin in with the IAM User Credentials:
 
 
 
