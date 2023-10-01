@@ -119,7 +119,14 @@
 - Create the Security Group.
 - Click on "Launch Instance"
 
-
+### - 3.2 - SSH onto the EC2 Instance using Git-BASH:
+- Download Git-BASH
+- Navigate to the location of you Key-Pair.pem file.
+- Change the Key-pair.pem file permissions.
+```bash
+chmod 400 "Key-pair.pem"
+```
+- Enter this code to ssh 
 
 
 
