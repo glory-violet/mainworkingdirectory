@@ -64,11 +64,20 @@
 ### "For detailed project guidance and step-by-step execution instructions, please refer to the comprehensive project guide provided below."
 # Project Execution _Guide:
 ## PART-1 - [Creating an AWS Account _Tutorial](https://www.youtube.com/watch?v=SFaSB6vgp8k&t=13s)  
-#### AWS Cloud:
 #### AWS (Amazon Web Services) is a comprehensive and widely used cloud computing platform that offers a wide range of scalable and on-demand computing services, including storage, databases, machine learning, and more.
 
-#### Use Cases:
-#### Creating an AWS account is the initial step because AWS provides the infrastructure and services required for hosting the EC2 instance and S3 bucket, etc.
+#### Use Cases: Creating an AWS account is the initial step because AWS provides the infrastructure and services required for hosting the EC2 instance and S3 bucket, etc.
 
 
 ### - 1.1 - To access the [AWS Sign-Up page](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)
+
+## PART-2 - Setting up AWS IAM Crdentials:
+#### AWS IAM (Identity and Access Management) Credentials are authentication and authorization settings that define who can access AWS resources and what actions they can perform, ensuring secure and controlled access to AWS services and data.
+
+#### Use Cases - Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
+
+### - 2.1 - Creating an IAM User
+### - 2.2 - Creating an IAM Group
+### - 2.3 - Creating an Assigning Permisions. e.g. EC2 Full Access, and S3 Full Access.
+### - 2.4 - Creating Access Credentials.
+### - 2.5 - Loggin in with the IAM User Credentials.
