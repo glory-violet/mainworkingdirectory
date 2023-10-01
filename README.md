@@ -41,7 +41,22 @@
 
 
 ## Project - "Solution":
-#### Providing an automated and efficient backup solution that runs automatically on a pre-defined, scheduled time reducing human interventions for backup, and to save time & efforts.
+#### To address Mr. John Doe's requirement of automating MongoDB database backups for his website hosted on an AWS EC2 instance, we can create a comprehensive solution by leveraging a combination of AWS resources and scripting tools:
+
+### AWS Resources:
+
+#### • Amazon Elastic Compute Cloud (EC2) for hosting the Website, MongoDB, and backup scripts.
+
+#### • Amazon Simple Storage Service (S3) for storing MongoDB backups securely.
+
+#### • Amazon Identity and Access Management (IAM) for managing access permissions.
+
+#### • MongoDB for database management.
+
+### Scripting Tools:
+#### • Cron jobs for scheduling and automating backup tasks.
+
+#### Following this project solution, Mr. John Doe will have a reliable and automated MongoDB backup system in place, allowing him to focus on more productive tasks while ensuring the safety and availability of his website's data.
 
 
 ............................................................................................................................................................................................................................
