@@ -111,13 +111,13 @@
 > Launching an EC2 instance is necessary because it provides the virtual computing environment where MongoDB will run.
 
 ### - 3.1 - Navigate to EC2 section in the AWS Management Console.
-###       - Click on "Launch Instances" 
-###       - Define the EC2 Instance Name.
-###       - Select the AMI as Ubuntu and the Version is 20.04 LTS.
-###       - Select the Instance type as Free-Tier.
-###       - Create the Key-pair.
-###       - Create the Security Group.
-###       - Click on "Launch Instance"
+- Click on "Launch Instances" 
+- Define the EC2 Instance Name.
+- Select the AMI as Ubuntu and the Version is 20.04 LTS.
+- Select the Instance type as Free-Tier.
+- Create the Key-pair.
+- Create the Security Group.
+- Click on "Launch Instance"
 
 
 
