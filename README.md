@@ -145,6 +145,11 @@ To Know more, visit [MongoDB Official Documentation](https://www.mongodb.com/doc
 #### Add all the below commands one after the other in sequence to start installing required packages for MongoDB on EC2-Ubuntu home directory:
 
 ### 4.1 MongoDB repository and associated GPG key Configuration:
+
+```bash
+sudo apt-get update
+```
+
 ```bash
 sudo apt-get install gnupg
 ```
@@ -155,10 +160,6 @@ wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add 
 
 ```bash
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
-```
-
-```bash
-sudo apt-get update
 ```
 
 ```bash
@@ -246,10 +247,7 @@ To see the DBS available in MongoDB again:
 ```bash
 show dbs
 ```
-
-
 #### Now you will be able to see Sales DB.
-
 #### To exit the MongoDB Shell press "CTRL + C"
 
 
@@ -265,11 +263,112 @@ show dbs
 #### Use Case: 
 > Creating an S3 bucket serves as the destination for storing MongoDB backups. S3 offers scalable, secure, and durable object storage, making it an ideal choice for backup storage.
 
-### - 5.1 - Creating S3 bucket
-### - 5.2 - Creating a "backup" fodler in the S3 bucket.
-### - 5.3 - Enabling MongoDB Backup from the EC2 to S3.
-### - 5.4 - Testing the backup configuration.
+### - 5.1 - Creating S3 bucket:
+- Navigate to the S3 section in AWS Management Console.
+- Click on "Ceate bucket"
+- Define S3 bucket name. e.g Mongodb-bucket
+- Scroll all the way down and click on "Create bucket"
+- Once the bucket is created successfully.
+- Click on the bucket name.
+- Click on "Create folder" option.
+- Create a folder named backup. e.g. "backup"
+- Scroll down and click on "Create folder"
 
+#### Now you will be having a S3 Bucket with the Name: MongoDB-Bucket, and a folder within that bucket which named "backup" (All in lower case).
+
+### - 5.2 - Enabling MongoDB Backup from the EC2 to S3.
+> In EC2 terminal create a new file with the .sh extension as shown in the example below:
+e.g. "task.sh" or "example.sh"
+- Command to create a new file on EC2 /home/ubuntu/:
+```bash
+sudo nano task.sh
+```
+> The above code will create a file and enables it to be edited:
+- Once the task.sh file is editable copy and paste the entire script from below into the task.sh file:
+```shell
+#!/bin/sh
+
+# S3 bucket name
+BUCKET=mongosb-s3-bucket-30.09/backup/ 
+BACKUPBUCKET=mongosb-s3-bucket-30.09/backup/
+
+# Linux user account
+USER=ubuntu
+
+# Backup directory
+DEST=/home/$USER/backup/dump
+
+# Dump z2p & poststodos
+mongodump --db sales --out $DEST
+
+# File name
+TIME=`/bin/date --date='+5 hour 30 minutes' '+%d-%m-%Y-%I-%M-%S-%p'`
+
+# Tar file of backup directory
+TAR=$DEST/../$TIME.tar
+
+# Create tar of backup directory
+/bin/tar cvf $TAR -C $DEST .
+
+# Upload tar to s3
+/usr/bin/aws s3 cp $TAR s3://$BUCKET
+#/usr/bin/aws s3 cp $TAR s3://$BACKUPBUCKET
+
+# Remove tar file locally
+/bin/rm -f $TAR
+
+# Remove backup directory
+/bin/rm -rf $DEST
+```
+
+- To save and exit the file:
+```bash
+CTRL + o + ENTER, CTRL + X
+```
+
+### 5.3 Create files and directories:
+> The directory structure and the empty file are being created to establish a designated location for storing backups and data files in a specified directory
+```bash 
+mkdir -p /home/ubuntu/backup/dump/
+```
+```bash
+touch /home/ubuntu/backup/dump/myfile.txt
+```
+
+### 5.4 Installing the AWS CLI:
+```bash
+sudo apt install awscli
+```
+
+> Once the AWS CLI is installed, type the below code to start configure it with the AWS Access Credentials:
+```bash
+aws configure
+```
+> Below are the sample of details you need to enter:
+
+```bash
+COPY AND PASTE THE ACCESS KEY ID:  "Copy and paste the AWS Access Key ID"
+COPY AND PASTE THE SECRET ACCESS KEY ID: "Copy and paste the AWS Aecret Access Key ID"
+ENTER THE DEFAULT REGION NAME: "e.g. us-east.1"
+DEFAULT OUTPUT FORMAT: "JSON"
+```
+
+- To see if the configure is done properly enter the command below to call s3:
+```bash
+aws s3 ls
+```
+> If the command above is giving you the list of AWS S3 buckets than the AWS Access Key configuration is successfull.
+
+### - 5.5 - Testing the backup configuration.
+- Run the task.sh file in order to check the backup connection with S3.
+```bash
+bash task.sh
+```
+
+> After executing the above command check the S3 bucket and you can find a backup file with execution date and time.
+
+- Run the command "bash task.sh" again in order to see the changed time stamp of the backup files:
+bash task.sh
 
 
 
