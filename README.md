@@ -195,7 +195,7 @@ sudo systemctl daemon-reload
 ```bash
 sudo systemctl status mongod
 ```
-#### If it has been installed successfully then you will see the status as "Active Running"
+#### If it has been installed successfully, you will see the MongoDB status as "Active Running"
 #### CTRL + C to exit out of the MongoDB Status.
 
 #### Run the below command if there is any trouble with the MongoDB (Optional Commands):
@@ -207,10 +207,10 @@ sudo systemctl enable mongod
 sudo systemctl restart mongod
 ```
 
-Install the MongoDB Shell:
-#### Installing the MongoDB shell to interact with MongoDB databases using a command-line interface.
+### Install the MongoDB Shell:
+> Installing the MongoDB shell to interact with MongoDB databases using a command-line interface.
 
-#### MongoDB Shell will allows us to query, manipulate, and manage data directly from the terminal.
+> MongoDB Shell will allows us to query, manipulate, and manage data directly from the terminal.
 
 #### The below command will enable MongoDB Shell to interact with MongoDB Database:
 ```bash
