@@ -143,9 +143,8 @@ To Know more, visit [MongoDB Official Documentation](https://www.mongodb.com/doc
 > Installing MongoDB on the EC2 instance is required to set up the database system that stores the application's data.
 
 #### Add all the below commands one after the other in sequence to start installing required packages for MongoDB on EC2-Ubuntu home directory:
-```bash
-wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
-```
+
+### 4.1 MongoDB repository and associated GPG key Configuration:
 ```bash
 sudo apt-get install gnupg
 ```
@@ -166,7 +165,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-#### Install MongoDB:
+### 4.2 Installing MongoDB:
 ```bash
 sudo apt-get install -y mongodb-org
 ```
@@ -207,7 +206,7 @@ sudo systemctl enable mongod
 sudo systemctl restart mongod
 ```
 
-### Install the MongoDB Shell:
+### 4.3 Install the MongoDB Shell:
 > Installing the MongoDB shell to interact with MongoDB databases using a command-line interface.
 
 > MongoDB Shell will allows us to query, manipulate, and manage data directly from the terminal.
@@ -218,6 +217,7 @@ mongosh
 ```
 #### To exit press "CTRL + C".
 
+### 4.4 To Create a MongoDB Table and Insert Data: 
 #### To see the Database Tables available in the MongoDB:
 ```bash
 mongo 
