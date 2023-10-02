@@ -142,7 +142,118 @@ To Know more, visit [MongoDB Official Documentation](https://www.mongodb.com/doc
 #### Use Cases:
 > Installing MongoDB on the EC2 instance is required to set up the database system that stores the application's data.
 
-### - 4.1 - Installing MongoDB
+#### Add all the below commands one after the other in sequence to start installing required packages for MongoDB on EC2-Ubuntu home directory:
+```bash
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+```
+```bash
+sudo apt-get install gnupg
+```
+
+```bash
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+```
+
+```bash
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+```
+
+```bash
+sudo apt-get update
+```
+
+```bash
+sudo apt-get upgrade
+```
+
+#### Install MongoDB:
+```bash
+sudo apt-get install -y mongodb-org
+```
+
+#### Copy all the below commands at once and paste it in the EC2 terminal:
+```bash
+echo "mongodb-org hold" | sudo dpkg --set-selections
+echo "mongodb-org-database hold" | sudo dpkg --set-selections
+echo "mongodb-org-server hold" | sudo dpkg --set-selections
+echo "mongodb-org-shell hold" | sudo dpkg --set-selections
+echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+```
+
+#### Start the MongoDB:
+```bash
+sudo systemctl start mongod
+```
+
+#### If you get any ERROR!!!, run the below command, if not you can skip the command:
+```bash
+sudo systemctl daemon-reload
+```
+
+#### To check the status of MongoDB:
+```bash
+sudo systemctl status mongod
+```
+#### If it has been installed successfully then you will see the status as "Active Running"
+#### CTRL + C to exit out of the MongoDB Status.
+
+#### Run the below command if there is any trouble with the MongoDB (Optional Commands):
+```bash
+sudo systemctl enable mongod
+```
+
+```bash
+sudo systemctl restart mongod
+```
+
+Install the MongoDB Shell:
+#### Installing the MongoDB shell to interact with MongoDB databases using a command-line interface.
+
+#### MongoDB Shell will allows us to query, manipulate, and manage data directly from the terminal.
+
+#### The below command will enable MongoDB Shell to interact with MongoDB Database:
+```bash
+mongosh
+```
+#### To exit press "CTRL + C".
+
+#### To see the Database Tables available in the MongoDB:
+```bash
+mongo 
+show dbs
+```
+
+To create a new DB named "Sales":
+```bash
+use Sales
+```
+
+To see the DBS available in MongoDB:
+```bash
+show dbs
+```
+#### Note: That it is not showing the Sales DB Table created in the list.
+
+#### Insert data in to the "Sales" DB:
+```bash
+db.createCollection("myCollection")
+db.myCollection.insert({ name: "Sample Document" })
+```
+
+
+To see the DBS available in MongoDB again:
+```bash
+show dbs
+```
+
+
+#### Now you will be able to see Sales DB.
+
+#### To exit the MongoDB Shell press "CTRL + C"
+
+
+
 
 
 
