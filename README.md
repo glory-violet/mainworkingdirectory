@@ -89,6 +89,7 @@
 ## PART-2 [Setting up AWS IAM Crdentials _Tutorial:]
 #### About AWS IAM:
 > AWS IAM (Identity and Access Management) Credentials are authentication and authorization settings that define who can access AWS resources and what actions they can perform, ensuring secure and controlled access to AWS services and data.
+To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
 #### Use Cases:
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
@@ -107,7 +108,7 @@
 
 ## PART-3 [Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:]
 #### About Amazon Elastic Compute Cloud:
-> An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment.
+> An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment. To know more, visit [AWS EC2 Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
 #### Use Cases:
 > Launching an EC2 instance is necessary because it provides the virtual computing environment where MongoDB will run.
@@ -122,7 +123,7 @@
 - Click on "Launch Instance"
 
 ### 3.2 - SSH onto the EC2 Instance using Git-BASH:
-- Download Git-BASH
+- [Download Git-BASH](https://git-scm.com/downloads)
 - Navigate to the location of you Key-Pair.pem file.
 - Change the Key-pair.pem file permissions.
 ```bash
@@ -136,6 +137,7 @@ chmod 400 "Key-pair.pem"
 ## PART-4 Installing MongoDB and its Dependencies on EC2 _Tutorial:
 #### About MongoDB:
 > MongoDB is a popular NoSQL database management system developed by MongoDB Inc. It stores data in a flexible, JSON-like format and is known for its scalability, performance, and ability to handle unstructured or semi-structured data.
+To Know more, visit [MongoDB Official Documentation](https://www.mongodb.com/docs/)
 
 #### Use Cases:
 > Installing MongoDB on the EC2 instance is required to set up the database system that stores the application's data.
@@ -147,7 +149,7 @@ chmod 400 "Key-pair.pem"
 
 ## PART-5 Creating an S3 bucket and configuring it as the destination for MongoDB backups from EC2 _Tutorial:
 #### About Amazon Simple Storage Service:
-> Amazon S3 (Simple Storage Service) is a highly scalable and secure object storage service provided by Amazon Web Services (AWS) for storing and retrieving data, often used for backup, data archiving, and serving static assets for websites and applications.
+> Amazon S3 (Simple Storage Service) is a highly scalable and secure object storage service provided by Amazon Web Services (AWS) for storing and retrieving data, often used for backup, data archiving, and serving static assets for websites and applications. To know more, visit [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
 #### Use Case: 
 > Creating an S3 bucket serves as the destination for storing MongoDB backups. S3 offers scalable, secure, and durable object storage, making it an ideal choice for backup storage.
