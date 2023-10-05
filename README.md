@@ -2,21 +2,6 @@
 #### This GitHub repository hosts the Source Code and Documentation for an automated backup solution designed to simplify and enhance MongoDB data backup processes running on Amazon Elastic Compute Cloud (EC2) instances.
 
 
-
-## Project - "Overview":
-#### • Providing an automated and Efficient Backup Solution that runs automatically on a pre-defined, scheduled time reducing human interventions for backup, and saving time and efforts.
-
-#### • This project aimed to create a comprehensive MongoDB backup solution on an EC2 Instance within the AWS Environment.
-
-#### Here is a diagram providing a high-level overview of the project:
-<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106" width="750" height="500">
-
-#### • It involves several components and steps to ensure a robust system for MongoDB database hosted on an Amazon Web Service (AWS) EC2 Instance.
-
-#### • It covers the setup of AWS resources, the installation of MongoDB, the configuration of an S3 bucket for storing backups, and the automation of the backup process.
-
-
-
 ## Project - "Problem Statement":
 #### Mr. John Williams is an employee at an IT Company, He works on the Cloud Technology in the IT department. 
 
@@ -56,6 +41,21 @@
 
 #### Following this project solution, Mr. John Doe will have a reliable and automated MongoDB backup system in place, allowing him to focus on more productive tasks while ensuring the safety and availability of his website's data.
 
+
+
+
+
+## Project - "Overview":
+#### • Providing an automated and Efficient Backup Solution that runs automatically on a pre-defined, scheduled time reducing human interventions for backup, and saving time and efforts.
+
+#### • This project aimed to create a comprehensive MongoDB backup solution on an EC2 Instance within the AWS Environment.
+
+#### Here is a diagram providing a high-level overview of the project:
+<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106" width="750" height="500">
+
+#### • It involves several components and steps to ensure a robust system for MongoDB database hosted on an Amazon Web Service (AWS) EC2 Instance.
+
+#### • It covers the setup of AWS resources, the installation of MongoDB, the configuration of an S3 bucket for storing backups, and the automation of the backup process.
 
 ............................................................................................................................................................................................................................
 
