@@ -239,7 +239,6 @@ mongo
 show dbs
 ```
 
-
 To create a new DB named "Sales":
 ```bash
 use Sales
@@ -300,6 +299,7 @@ sudo nano task.sh
 ```
 > The above code will create a file and enables it to be edited:
 - Once the task.sh file is editable copy and paste the entire script from below into the task.sh file:
+NOTE: Replace the "BUCKET" and "BACKUPBUCKET" with the actual S3 bucket, backup file location path. 
 ```shell
 #!/bin/sh
 
@@ -389,3 +389,26 @@ bash task.sh
 
 
 ## PART-6 Automating MongoDB Backup _Tutorial:
+> Set up a scheduled task using a crontab on our Amazon EC2 instance to automate the MongoDB backup process.
+
+> This ensures that our database is regularly backed up at specified intervals, providing data redundancy and security.
+
+> "crontab -e" opens the user's crontab file in an editor, allowing them to edit and schedule cron jobs.
+```bash
+crontab -e
+```
+
+- It will give you options to select the editor.
+1. Select /bin/nano/ <----- easiest
+
+> Now, a Crontab file will open and become editable. Scroll down to the bottom and paste the cron job script below to automate the backups according to the specified time in the script.
+```bash
+* * * * * /home/ubuntu/task.sh
+```
+> This cron job runs the task.sh script every minute, executing it as the user 'ubuntu' to save the MongoDB backups in S3.
+
+- This command grants execute permission to the task.sh file, making it executable.
+```bash
+chmod +x task.sh
+```
+
