@@ -6,6 +6,9 @@
 
 
 ## Project - "Overview":
+#### [Here is a diagram providing a high-level overview of the project](https://github.com/glory-violet/mainworkingdirectory/blob/main/Project%20Overview.png)
+![Project Overview](https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106)
+
 #### • Providing an automated and Efficient Backup Solution that runs automatically on a pre-defined, scheduled time reducing human interventions for backup, and saving time and efforts.
 
 #### • This project aimed to create a comprehensive MongoDB backup solution on an EC2 Instance within the AWS Environment.
@@ -13,9 +16,6 @@
 #### • It involves several components and steps to ensure a robust system for MongoDB database hosted on an Amazon Web Service (AWS) EC2 Instance.
 
 #### • It covers the setup of AWS resources, the installation of MongoDB, the configuration of an S3 bucket for storing backups, and the automation of the backup process.
-
-#### [Here is a diagram providing a high-level overview of the project](https://github.com/glory-violet/mainworkingdirectory/blob/main/Project%20Overview.png)
-![Project Overview](https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106)
 
 
 
