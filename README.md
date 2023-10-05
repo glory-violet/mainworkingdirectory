@@ -14,9 +14,8 @@
 
 #### • It covers the setup of AWS resources, the installation of MongoDB, the configuration of an S3 bucket for storing backups, and the automation of the backup process.
 
+[It is a diagram providing a high-level overview of the project](https://github.com/glory-violet/mainworkingdirectory/blob/main/Project%20Overview.png)
 
-
-.
 
 
 ## Project - "Problem Statement":
