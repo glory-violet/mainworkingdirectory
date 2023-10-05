@@ -207,7 +207,7 @@ sudo systemctl daemon-reload
 sudo systemctl status mongod
 ```
 #### If it has been installed successfully, you will see the MongoDB status as "Active Running"
-<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/fba5f7ae-f942-4d92-af1d-922cedca6aed" width="1000" height="100">
+<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/fba5f7ae-f942-4d92-af1d-922cedca6aed" width="750" height="100">
 
 #### CTRL + C to exit out of the MongoDB Status.
 
