@@ -117,20 +117,33 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 - Click on "Launch Instances" 
 - Define the EC2 Instance Name.
 - Select the AMI as Ubuntu and the Version is 20.04 LTS.
-- Select the Instance type as Free-Tier.
+- Select the Instance type as t2.micro (Free-Tier Eligible).
 - Create the Key-pair.
 - Create the Security Group.
+    - Allow SSH Connection Port: 22
 - Click on "Launch Instance"
 
 ### 3.2 - SSH onto the EC2 Instance using Git-BASH:
+
 - [Download Git-BASH](https://git-scm.com/downloads)
+- Open the Git-BASH Terminal 
 - Navigate to the location of you Key-Pair.pem file.
+    - Example: cd downloads or cd desktop
 - Change the Key-pair.pem file permissions.
 ```bash
 chmod 400 "Key-pair.pem"
 ```
-- Enter this code to ssh 
-
+- Once the EC2 Instance is launched successfully, click on that instance ID.
+- Click on "Connect"
+- Select "SSH Client" option
+- Copy the SSH Code that Amazon provides.
+- Enter this code in Git-BASH to establish a SSH connection onto the EC2.
+Below is the "Sample SSH Code"
+```bash
+ssh -i "MongoDB-key.pem" ubuntu@ec2-44-201-89-38.compute-1.amazonaws.com
+```
+- Type "Yes" for the confirmation.
+- Now you will be successfully connected to the EC2-Ubuntu Instance.
 
 
 
