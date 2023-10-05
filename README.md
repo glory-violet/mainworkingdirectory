@@ -239,6 +239,7 @@ mongo
 show dbs
 ```
 
+
 To create a new DB named "Sales":
 ```bash
 use Sales
