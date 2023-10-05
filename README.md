@@ -9,7 +9,7 @@
 #### • This project aimed to create a comprehensive MongoDB backup solution on an EC2 Instance within the AWS Environment.
 
 #### Here is a diagram providing a high-level overview of the project:
-<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106" width="850" height="500">
+<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106" width="700" height="500">
 
 #### • It involves several components and steps to ensure a robust system for MongoDB database hosted on an Amazon Web Service (AWS) EC2 Instance.
 
