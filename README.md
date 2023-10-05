@@ -398,7 +398,7 @@ bash task.sh
 crontab -e
 ```
 
-- It will give you options to select the editor.
+#### - It will give you options to select the editor.
 1. Select /bin/nano/ <----- easiest
 
 > Now, a Crontab file will open and become editable. Scroll down to the bottom and paste the cron job script below to automate the backups according to the specified time in the script.
@@ -407,7 +407,7 @@ crontab -e
 ```
 > This cron job runs the task.sh script every minute, executing it as the user 'ubuntu' to save the MongoDB backups in S3.
 
-- This command grants execute permission to the task.sh file, making it executable.
+#### - This command grants execute permission to the task.sh file, making it executable.
 ```bash
 chmod +x task.sh
 ```
