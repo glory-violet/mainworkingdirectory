@@ -2,7 +2,7 @@
 #### This GitHub repository hosts the Source Code and Documentation for an automated backup solution designed to simplify and enhance MongoDB data backup processes running on Amazon Elastic Compute Cloud (EC2) instances.
 
 
-<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106 "width="250">
+<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106 width="250">
 
 
 
