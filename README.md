@@ -6,7 +6,7 @@
 
 ## Project - "Overview":
 #### Here is a diagram providing a high-level overview of the project:
-<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106" width="300">
+<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/9eab7e1a-08f0-491e-95bb-028ebc558106" width="400">
 
 #### • Providing an automated and Efficient Backup Solution that runs automatically on a pre-defined, scheduled time reducing human interventions for backup, and saving time and efforts.
 
