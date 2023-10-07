@@ -133,13 +133,13 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 
 
 ### 2.3 Loggin in with the IAM User Credentials:
-#### - Open the downloaded .csv file
-#### - Copy the "Console Sign-In URL" e.g. https://2614522386654.signin.aws.amazon.com/console
-#### - You will get a Sign-in Page with the details such as:
-####     - Account ID (12 digits) or account alias (Will be already entered)
-####     - IAM user name (Enter the IAM User Name from the .csv file)
-####     - Enter the 'Auto Generated Password" from the .csv file.
-#### - Now you will signed with the Newly created IAM User Credentials, with the User permission to access EC2 and S3 fully.
+- Open the downloaded .csv file
+- Copy the "Console Sign-In URL" e.g. https://2614522386654.signin.aws.amazon.com/console
+     - You will get a Sign-in Page with the details such as:
+     - Account ID (12 digits) or account alias (Will be already entered)
+     - IAM user name (Enter the IAM User Name from the .csv file)
+     - Enter the 'Auto Generated Password" from the .csv file.
+- Now you will signed with the Newly created IAM User Credentials, with the User permission to access EC2 and S3 fully.
 
 
 
