@@ -93,18 +93,57 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
 
 ### 2.1 - Creating an AWS IAM User Credentials:
-- Create an IAM User
-- Create an IAM Group
-2.3 - Creating an Assigning Permisions. e.g. EC2 Full Access, and S3 Full Access.
-- Creating Access Credentials.
-- Loggin in with the IAM User Credentials.
+- Navigate to IAM section in AWS Management Console
+- Click on "Users" from the option at the left hand side.
+- Clicl "Create User"
+- Define the User Name. e.g. MongoDB-User
+- Tick Mark "Provide User Access to the AWS Mangement Console" option.
+- Select "I want to Create an IAM User" option.
+- Select "Auto Generated Password" option.
+- Uncheck the option "Users must create a new password at next sign-in" option.
+- Click on "NEXT" at the bottom of the screen.
 
-### 2.2 - Loggin in with the IAM User Credentials:
+- Click on "Create Group" 
+- Define a "Group Name" e.g. MongoDB-Group
+- In the "Permissions Policies" section:
+    - Type in "EC2fullaccess" in the search bar under "Permission Policies"
+    - Type in "S3fullaccess" in the search bar under "Permission Policies"
+- Click on "Create User Group"
+- Click on "NEXT"
+- Review and Create User.
+- Now you will get the console signing details such as:
+    - Console sign-in URL
+    - User name
+    - Console password
+- Click on "Download .csv file" to downlaod the AWS Management Console login details.
+
+
+### 2.2 Enabling Access Credentials to the IAM User:
+- Select the IAM User created in the above steps.
+- Click on "Security Credentials:
+- Scroll down the page to "Access Keys" section.
+- Click on "Create Access" 
+- Select the "Command Line Interface" CLI option.
+- Scroll down the page and Check mark the confirmation option.
+- Click on "NEXT"
+- Description tag value
+- Click on "Create Access Key"
+- Click on "Download .csv file" to downloa the Access Credentials which will be used further in the project.  
+- Once downloaded, sign-out from the Root user account.
+
+
+### 2.3 Loggin in with the IAM User Credentials:
+- Open the downloaded .csv file
+- Copy the "Console Sign-In URL" e.g. https://2614522386654.signin.aws.amazon.com/console
+- You will get a Sign-in Page with the details such as:
+    - Account ID (12 digits) or account alias (Will be already entered)
+    - IAM user name (Enter the IAM User Name from the .csv file)
+    - Enter the 'Auto Generated Password" from the .csv file.
+- Now you will signed with the Newly created IAM User Credentials, with the User permission to access EC2 and S3 fully.
 
 
 
-
-## PART-3 [Launching an EC2-Ubuntu Instance and Establishing SSH Connection _Tutorial:]
+## PART-3 [Launching an EC2-Ubuntu Instance and Establishing SSH Connection]
 #### About Amazon Elastic Compute Cloud:
 > An EC2 (Elastic Compute Cloud) instance is a virtual server in Amazon Web Services (AWS) that can be configured and used to run applications, perform computing tasks, and host various software systems in a cloud-based environment. To know more, visit [AWS EC2 Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
@@ -145,7 +184,7 @@ ssh -i "MongoDB-key.pem" ubuntu@ec2-44-201-89-38.compute-1.amazonaws.com
 
 
 
-## PART-4 Installing MongoDB and its Dependencies on EC2 _Tutorial:
+## PART-4 Installing MongoDB and its Dependencies on EC2:
 #### About MongoDB:
 > MongoDB is a popular NoSQL database management system developed by MongoDB Inc. It stores data in a flexible, JSON-like format and is known for its scalability, performance, and ability to handle unstructured or semi-structured data.
 To Know more, visit [MongoDB Official Documentation](https://www.mongodb.com/docs/)
