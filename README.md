@@ -152,8 +152,8 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 
 ### - 3.1 - Navigate to EC2 section in the AWS Management Console.
 - Click on "Launch Instances" 
-- Define the EC2 Instance Name.
-- Select the AMI as Ubuntu and the Version is 20.04 LTS.
+- Define the EC2 Instance Name. e.g. "MongoDB-Server"
+- Select the AMI as Ubuntu and the Version as 20.04 LTS.
 - Select the Instance type as t2.micro (Free-Tier Eligible).
 - Create the Key-pair.
 - Create the Security Group.
@@ -197,6 +197,10 @@ To Know more, visit [MongoDB Official Documentation](https://www.mongodb.com/doc
 ### 4.1 MongoDB repository and associated GPG key Configuration:
 
 ```bash
+sudo su
+```
+
+```bash
 sudo apt-get update
 ```
 
@@ -210,6 +214,10 @@ wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add 
 
 ```bash
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+```
+
+```bash
+sudo apt-get update
 ```
 
 ```bash
@@ -269,7 +277,6 @@ sudo systemctl restart mongod
 ```bash
 mongosh
 ```
-#### To exit press "CTRL + C".
 
 ### 4.4 To Create a MongoDB Table and Insert Data: 
 #### To see the Database Tables available in the MongoDB:
@@ -319,7 +326,7 @@ show dbs
 ### - 5.1 - Creating S3 bucket:
 - Navigate to the S3 section in AWS Management Console.
 - Click on "Ceate bucket"
-- Define S3 bucket name. e.g Mongodb-bucket
+- Define S3 bucket name. e.g "mongodb-bucket"
 - Scroll all the way down and click on "Create bucket"
 - Once the bucket is created successfully.
 - Click on the bucket name.
@@ -338,13 +345,16 @@ sudo nano task.sh
 ```
 > The above code will create a file and enables it to be edited:
 - Once the task.sh file is editable copy and paste the entire script from below into the task.sh file:
-NOTE: Replace the "BUCKET" and "BACKUPBUCKET" with the actual S3 bucket, backup file location path. 
+NOTE: 
+1. Replace the "BUCKET" and "BACKUPBUCKET" with the actual S3 bucket, backup file location path. 
+2. Also change the # Dump z2p & poststodos to Sales.
+
 ```shell
 #!/bin/sh
 
 # S3 bucket name
-BUCKET=mongosb-s3-bucket-30.09/backup/ 
-BACKUPBUCKET=mongosb-s3-bucket-30.09/backup/
+BUCKET=copy and paste the s3 bucket name here/backups/ 
+BACKUPBUCKET=copy and paste the s3 bucket name here/backups/
 
 # Linux user account
 USER=ubuntu
@@ -398,6 +408,7 @@ sudo apt install awscli
 ```bash
 aws configure
 ```
+- Navigate to the .csv file downloaded for Access Credentials, copy and paste the details to configure EC2 to interact with S3.
 > Below are the sample of details you need to enter:
 
 ```bash
