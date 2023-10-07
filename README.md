@@ -93,43 +93,43 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
 
 ### 2.1 - Creating an AWS IAM User Credentials:
-#### - Navigate to IAM section in AWS Management Console
-#### - Click on "Users" from the option at the left hand side.
-#### - Clicl "Create User"
-#### - Define the User Name. e.g. MongoDB-User
-#### - Tick Mark "Provide User Access to the AWS Mangement Console" option.
-#### - Select "I want to Create an IAM User" option.
-#### - Select "Auto Generated Password" option.
-#### - Uncheck the option "Users must create a new password at next sign-in" option.
-#### - Click on "NEXT" at the bottom of the screen.
+- Navigate to IAM section in AWS Management Console
+- Click on "Users" from the option at the left hand side.
+- Clicl "Create User"
+- Define the User Name. e.g. MongoDB-User
+- Tick Mark "Provide User Access to the AWS Mangement Console" option.
+- Select "I want to Create an IAM User" option.
+- Select "Auto Generated Password" option.
+- Uncheck the option "Users must create a new password at next sign-in" option.
+- Click on "NEXT" at the bottom of the screen.
 
-#### - Click on "Create Group" 
-#### - Define a "Group Name" e.g. MongoDB-Group
-#### - In the "Permissions Policies" section:
-####     - Type in "EC2fullaccess" in the search bar under "Permission Policies"
-####     - Type in "S3fullaccess" in the search bar under "Permission Policies"
-#### - Click on "Create User Group"
-#### - Click on "NEXT"
-#### - Review and Create User.
-#### - Now you will get the console signing details such as:
-####     - Console sign-in URL
-####     - User name
-####     - Console password
-#### - Click on "Download .csv file" to downlaod the AWS Management Console login details.
+- Click on "Create Group" 
+- Define a "Group Name" e.g. MongoDB-Group
+- In the "Permissions Policies" section:
+     - Type in "EC2fullaccess" in the search bar under "Permission Policies"
+     - Type in "S3fullaccess" in the search bar under "Permission Policies"
+- Click on "Create User Group"
+- Click on "NEXT"
+- Review and Create User.
+- Now you will get the console signing details such as:
+     - Console sign-in URL
+     - User name
+     - Console password
+- Click on "Download .csv file" to downlaod the AWS Management Console login details.
 
 
 ### 2.2 Enabling Access Credentials to the IAM User:
-#### - Select the IAM User created in the above steps.
-#### - Click on "Security Credentials:
-#### - Scroll down the page to "Access Keys" section.
-#### - Click on "Create Access" 
-#### - Select the "Command Line Interface" CLI option.
-#### - Scroll down the page and Check mark the confirmation option.
-#### - Click on "NEXT"
-#### - Description tag value
-#### - Click on "Create Access Key"
-#### - Click on "Download .csv file" to downloa the Access Credentials which will be used further in the project.  
-#### - Once downloaded, sign-out from the Root user account.
+- Select the IAM User created in the above steps.
+- Click on "Security Credentials:
+- Scroll down the page to "Access Keys" section.
+- Click on "Create Access" 
+- Select the "Command Line Interface" CLI option.
+- Scroll down the page and Check mark the confirmation option.
+- Click on "NEXT"
+- Description tag value
+- Click on "Create Access Key"
+- Click on "Download .csv file" to downloa the Access Credentials which will be used further in the project.  
+- Once downloaded, sign-out from the Root user account.
 
 
 ### 2.3 Loggin in with the IAM User Credentials:
