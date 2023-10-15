@@ -169,7 +169,7 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
      - Allow SSH Connection Port: 22 from anywhere
 - scroll down and click on "Launch Instance"
 - (Wait for couple of minutes for the EC2 Instance to be launched completely and show the status as "2/2 checks passed")
-<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/a6aa70d9-8eae-4c35-9e5f-d7f6564b1f0d" width="250" height="250">
+<img src="https://github.com/glory-violet/mainworkingdirectory/assets/137056419/a6aa70d9-8eae-4c35-9e5f-d7f6564b1f0d" width="500" height="250">
 
 ### 3.2 - SSH onto the EC2 Instance using Git-BASH:
 
