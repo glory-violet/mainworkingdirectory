@@ -168,7 +168,7 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
           "This security group allows SSH Connection to the EC2-MongoDB Server (Instance)."
      - Allow SSH Connection Port: 22 from anywhere
 - scroll down and click on "Launch Instance"
-- (Wait for couple of minutes for the EC2 Instance to be launched completely and show the status as <span style="color: Green;"> "2/2 checks passed" </span>)
+- (Wait for couple of minutes for the EC2 Instance to be launched completely and show the status as "2/2 checks passed")
 
 
 ### 3.2 - SSH onto the EC2 Instance using Git-BASH:
