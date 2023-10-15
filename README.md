@@ -92,10 +92,10 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 #### Use Cases:
 > Setting up IAM credentials is essential to ensure secure access to AWS resources. IAM enables fine-grained control over who can perform actions on resources.
 
-### 2.1 - Creating an AWS IAM User Credentials:
+### 2.1 - Creating an AWS IAM User:
 - Navigate to IAM section in AWS Management Console
 - Click on "Users" from the option at the left hand side.
-- Clicl "Create User"
+- Click "Create User"
 - Define the User Name. e.g. MongoDB-User
 - Tick Mark "Provide User Access to the AWS Mangement Console" option.
 - Select "I want to Create an IAM User" option.
@@ -103,14 +103,16 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 - Uncheck the option "Users must create a new password at next sign-in" option.
 - Click on "NEXT" at the bottom of the screen.
 
+### 2.2 - Creating IAM Group:
 - Click on "Create Group" 
 - Define a "Group Name" e.g. MongoDB-Group
 - In the "Permissions Policies" section:
      - Type in "EC2fullaccess" in the search bar under "Permission Policies"
      - Type in "S3fullaccess" in the search bar under "Permission Policies"
 - Click on "Create User Group"
+- Select the User Group creted in the aove step. e.g. MongoDB-Group
 - Click on "NEXT"
-- Review and Create User.
+- Review and click on "Create User".
 - Now you will get the console signing details such as:
      - Console sign-in URL
      - User name
@@ -126,19 +128,18 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 - Select the "Command Line Interface" CLI option.
 - Scroll down the page and Check mark the confirmation option.
 - Click on "NEXT"
-- Description tag value
-- Click on "Create Access Key"
-- Click on "Download .csv file" to downloa the Access Credentials which will be used further in the project.  
+- Under Description tag value click on "Create Access Key"
+- Click on "Download .csv file" to download the Access Credentials which will be used further in the project.  
 - Once downloaded, sign-out from the Root user account.
 
 
 ### 2.3 Loggin in with the IAM User Credentials:
 - Open the downloaded .csv file
-- Copy the "Console Sign-In URL" e.g. https://2614522386654.signin.aws.amazon.com/console
+- Copy the "Console Sign-In URL" e.g. https://2614522386654.signin.aws.amazon.com/console and paste the URL in the browser.
      - You will get a Sign-in Page with the details such as:
      - Account ID (12 digits) or account alias (Will be already entered)
      - IAM user name (Enter the IAM User Name from the .csv file)
-     - Enter the 'Auto Generated Password" from the .csv file.
+     - Enter the 'Auto Generated Password" from the .csv file and clicl "Sign-In"
 - Now you will signed with the Newly created IAM User Credentials, with the User permission to access EC2 and S3 fully.
 
 
@@ -155,10 +156,20 @@ To know more, visit [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/late
 - Define the EC2 Instance Name. e.g. "MongoDB-Server"
 - Select the AMI as Ubuntu and the Version as 20.04 LTS.
 - Select the Instance type as t2.micro (Free-Tier Eligible).
-- Create the Key-pair.
-- Create the Security Group.
-    - Allow SSH Connection Port: 22
-- Click on "Launch Instance"
+- Click on "Create New Key-pair".
+     - Define the Key-Pair Name. e.g. mongodb-key (All small letters)
+     - Let the default settings be and Click on "Create Key Pair" at the bottom
+- Create the Security Group:
+     - Click on "Edit" option under the "Network Settings"
+     - Leave the default VPC settings as it is.
+     - Scroll down and click on "Create security group"
+     - Define the name of the Security Group. e.g. "MongoDb-SG"
+     - Write a description. (Optional)
+          "This security group allows SSH Connection to the EC2-MongoDB Server (Instance)."
+     - Allow SSH Connection Port: 22 from anywhere
+- scroll down and click on "Launch Instance"
+(Wait for couple of minutes for the EC2 Instances to be launched and show the status as "2/2 checks passed")
+
 
 ### 3.2 - SSH onto the EC2 Instance using Git-BASH:
 
